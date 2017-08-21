@@ -18,7 +18,7 @@ import com.example.dimag.upstyleru.api.ApiInter;
 import com.example.dimag.upstyleru.api.ApiService1;
 import com.example.dimag.upstyleru.dto.AllGame_my_first;
 import com.example.dimag.upstyleru.dto.AllGames_mine;
-import com.example.dimag.upstyleru.recycler_view.recycler_my_games;
+import com.example.dimag.upstyleru.recyclerview.recycler_my_games;
 
 import java.util.ArrayList;
 import java.util.List;
