@@ -13,12 +13,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.crashlytics.android.Crashlytics;
 import com.example.dimag.upstyleru.api.ApiInter;
 import com.example.dimag.upstyleru.api.ApiService1;
 import com.example.dimag.upstyleru.R;
 import com.example.dimag.upstyleru.dto.Token;
 import com.example.dimag.upstyleru.dto.User;
 
+import io.fabric.sdk.android.Fabric;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_login);
         Button login = (Button) findViewById(R.id.loginbutton);
         final EditText log = (EditText) findViewById(R.id.log);
