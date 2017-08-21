@@ -20,7 +20,7 @@ import com.example.dimag.upstyleru.api.ApiInter;
 import com.example.dimag.upstyleru.dto.Add_comments;
 import com.example.dimag.upstyleru.dto.Commentlist;
 import com.example.dimag.upstyleru.dto.comments;
-import com.example.dimag.upstyleru.recyclerview.recycler_commends;
+import com.example.dimag.upstyleru.recyclerview.Recyclercommends;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +73,7 @@ public class CommentsActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        recycler_commends adapter = new recycler_commends(getApplicationContext(), (ArrayList<Commentlist>) Commendlist);
+        Recyclercommends adapter = new Recyclercommends(getApplicationContext(), (ArrayList<Commentlist>) Commendlist);
         recyclerView.setAdapter(adapter);
 
 

@@ -18,7 +18,7 @@ import com.example.dimag.upstyleru.api.ApiService1;
 import com.example.dimag.upstyleru.dto.AllGames;
 import com.example.dimag.upstyleru.R;
 import com.example.dimag.upstyleru.dto.Allgame_firstreq;
-import com.example.dimag.upstyleru.recyclerview.recycler_allgames;
+import com.example.dimag.upstyleru.recyclerview.Recyclerallgames;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +66,7 @@ public class AllGamesFragment extends Fragment {
         recyclerView.setLayoutManager(layoutManager);
 
 
-        recycler_allgames adapter = new recycler_allgames(getContext(), (ArrayList<AllGames>) allgames);
+        Recyclerallgames adapter = new Recyclerallgames(getContext(), (ArrayList<AllGames>) allgames);
         recyclerView.setAdapter(adapter);
 
         SharedPreferences settings = this.getActivity().getSharedPreferences("Settings", Context.MODE_PRIVATE);
