@@ -20,7 +20,7 @@ import com.example.dimag.upstyleru.api.ApiInter;
 import com.example.dimag.upstyleru.dto.Add_comments;
 import com.example.dimag.upstyleru.dto.Commentlist;
 import com.example.dimag.upstyleru.dto.comments;
-import com.example.dimag.upstyleru.recycler.recycler_commends;
+import com.example.dimag.upstyleru.recycler_view.recycler_commends;
 
 import java.util.ArrayList;
 import java.util.List;
