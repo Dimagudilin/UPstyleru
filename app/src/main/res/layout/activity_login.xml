@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:background="#FFF"
+    android:background="#00BCD4"
     android:layout_height="match_parent">
     <ScrollView
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:paddingTop="100dp"
-    android:src="@drawable/aku76ikrwbs"/>
+    android:src="@drawable/logo"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -24,36 +24,61 @@
         android:paddingLeft="12dp"
         android:orientation="vertical"
         android:paddingRight="12dp">
-    <EditText
-        android:layout_width="match_parent"
-        android:padding="10dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/style_login"
-        android:inputType="text"
-        android:id="@+id/log"
-        android:textColorHint="@color/greylogin"
-        android:hint="Login"/>
-        <EditText
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/style_login"-->
+        <!--android:inputType="text"-->
+        <!--android:id="@+id/log"-->
+        <!--android:textColorHint="@color/greylogin"-->
+        <!--android:hint="Login"/>-->
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:padding="10dp"-->
+            <!--android:id="@+id/pass"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/style_login"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:textColorHint="@color/greylogin"-->
+            <!--android:hint="Password"/>-->
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:padding="10dp"
-            android:id="@+id/pass"
-            android:layout_marginTop="10dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/style_login"
-            android:inputType="textPassword"
-            android:textColorHint="@color/greylogin"
-            android:hint="Password"/>
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Login" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#FFF"
+        android:background="#00ACC1"
         android:layout_gravity="center"
         android:textSize="18dp"
         android:id="@+id/loginbutton"
         android:textAllCaps="false"
         android:text="Войти"
-        android:textColor="@color/colorPrimary"/>
+        android:textColor="#FFFFFF"/>
         </LinearLayout>
         </LinearLayout>
     </ScrollView>

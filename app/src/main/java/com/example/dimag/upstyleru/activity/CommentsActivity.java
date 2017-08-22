@@ -62,8 +62,8 @@ public class CommentsActivity extends AppCompatActivity {
         SharedPreferences settings = getSharedPreferences("Settings", Context.MODE_PRIVATE);
         final String token = settings.getString("token", "0");
         final String id_game = settings.getString("id_game", "0");
-        String vs = settings.getString("player1tool1","")+" vs "+settings.getString("","");
-
+       // String vs = settings.getString("player1tool1","")+" vs "+settings.getString("","");
+        String vs = settings.getString("player1tool1","")+" vs "+settings.getString("player1tool2","");
 
         getSupportActionBar().setTitle(vs);
 
